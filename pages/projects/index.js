@@ -24,12 +24,11 @@ const Projects = () => {
        MY PROJECTS Includes
        <Typography> Vue: Yebox website</Typography>
        <Typography> Typescript: HealthXP website</Typography>
-       <Typography> React: Yebora Website and web App</Typography>
+       <Typography> React: Yebora Website</Typography>
        <Typography> React: Yebora web App</Typography>
        <Typography> React: Shout web App</Typography>
        <Typography> Next: Planvest Web app</Typography>
        <Typography> Next: Portfolio Website</Typography>
-       <Typography> Vue: Yebox website</Typography>
        <Typography> Wordpress: Jurislex website</Typography>
       </Typography>
     </Box>
