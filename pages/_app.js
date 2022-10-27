@@ -7,6 +7,14 @@ import Nav from '../components/Nav';
 
 
 // Create a theme instance.
+// const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: red[500],
+//     },
+//   },
+// });
+
 const lightTheme = createTheme({
   palette:{
     mode: 'light'
