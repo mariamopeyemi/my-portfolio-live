@@ -40,13 +40,13 @@ const Projects = () => {
             <Typography> Next: Planvest Web app</Typography>
             <Typography> Next: Portfolio Website</Typography>
             <Typography> Wordpress: Jurislex website</Typography>
-        <Box sx={{display: 'flex', gap: 2, flexWrap: 'wrap', justifyContent:'space-between'}}>
-          <ProjectCard projectTitle='Y' />
-          <ProjectCard projectTitle='E' />
-          <ProjectCard projectTitle='B' />
-          <ProjectCard projectTitle='O' />
-          <ProjectCard projectTitle='X' />
-          <ProjectCard projectTitle='X' />
+        <Box sx={{display: 'flex', gap: 4, flexWrap: 'wrap', justifyContent:'space-between'}}>
+          <ProjectCard projectTitle='Yebox' projectSum='A software company that builds sme '/>
+          <ProjectCard projectTitle='HealthXP'  projectSum='A healthTech startup that links patients with diff doctors' />
+          <ProjectCard projectTitle='CalcIT'  projectSum='a simple clalculator' />
+          <ProjectCard projectTitle='Jurislex'  projectSum='  a lawfirm ' />
+          <ProjectCard projectTitle='X'  />
+          <ProjectCard projectTitle='Planvest'  projectSum='A fintech app that enables you invest, save, and apply for loans' />
         </Box>
       </div>
     </Box>
