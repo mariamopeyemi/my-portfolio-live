@@ -36,16 +36,16 @@ import Typography from '@mui/material/Typography';
         
     //   </React.Fragment>
     // );
-    
+    // @499 scattered display
     export default function SkillCard({card, title}) {
       return (
-        <Box sx={{ minWidth: 150, margin: 0.5}}>
+        <Box sx={{ minWidth: {md:150}, margin: 0.5, backgroundColor:'red'}}>
           <Card variant="outlined">
           {/* <Card variant="outlined" sx={{ backgroundColor:'purple'}}> */}
             <CardContent sx={{ display: 'flex', margin: 'auto', justifyContent: 'center', height: 80 }}>
                 {card}
             </CardContent>
-            <Typography sx={{  display: 'flex', margin: 'auto', justifyContent: 'center', }} color="text.secondary">
+            <Typography sx={{ fontSize:'12px' , display: 'flex', margin: 'auto', justifyContent: 'center', }} color="text.secondary">
                {title}
             </Typography>
           </Card>

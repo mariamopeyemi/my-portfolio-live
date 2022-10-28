@@ -1,12 +1,13 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
+import Link from '@mui/material/Link';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
 // export default function MultiActionAreaCard() {
-export default function ProjectCard({projectTitle, 
+export default function ProjectCard({projectTitle, image, btnClick,
     projectSum= "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 }
 ) {
@@ -15,8 +16,8 @@ export default function ProjectCard({projectTitle,
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          height="200"
+          image={image}
           alt="diff projects"
         />
         <CardContent>
@@ -29,9 +30,17 @@ export default function ProjectCard({projectTitle,
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          View
-        </Button>
+      <Link target="_blank" rel="noreferrer noopener" href={btnClick}
+            sx={{
+              textDecoration: 'none',
+              color: 'white',
+             }}>
+            <Button size="small" color="primary"
+            >
+            View
+            </Button>
+        </Link>
+        
       </CardActions>
     </Card>
   );

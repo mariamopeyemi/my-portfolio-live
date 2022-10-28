@@ -27,7 +27,7 @@ const About = () => {
       flexDirection:'column',
       alignItems: 'center',
       gap:'4rem',
-      minHeight:'100vh'
+      minHeight:'80vh'
     }}>
       <Head>
         <title>About Opeyemi - portfolio</title>
@@ -52,22 +52,23 @@ const About = () => {
               compatibility, accessibility, and responsiveness.
           </Typography>
         </Box>
-        <Container sx={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-between'}}>
+        <Container sx={{display: 'flex', flexWrap: 'wrap', backgroundColor:'blue', justifyContent:'space-between'}}>
         {/* <Container sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row'}}}> */}
           {/* <SkillCard card ={ <FaBeer /> } title='BEER' /> */}
           {/* <SkillCard card ={ <HiOutlineCode /> } title='CODE' /> */}
-          <IconContext.Provider value={{color: 'navy', size: 42}}>
-          <SkillCard card ={ <AiFillCode  size={50} /> } title='VERSION CONTROL' />
-          <SkillCard card ={ <AiOutlineHtml5 size={50} /> } title='HTML' />
-          <SkillCard card ={ <FaCss3Alt size={50} /> } title='CSS' />
-          <SkillCard card ={ <SiJavascript size={50} /> } title='JAVASCRIPT' />
-          <SkillCard card ={ <FaReact size={50} /> } title='REACT' />
-          <SkillCard card ={ <TbBrandNextjs size={50} /> } title='NEXT' />
-          <SkillCard card ={ <FaVuejs size={50} /> } title='VUE' />
-          <SkillCard card ={ <FaSass size={50} /> } title='SASS' />
-          <SkillCard card ={ <SiTailwindcss size={50} /> } title='TAILWIND' />
-          <SkillCard card ={ <SiStyledcomponents size={50} /> } title='EMOTION STYLE' />
-          <SkillCard card ={ <SiTrello size={50} /> } title='TRELLO' />
+          <IconContext.Provider value={{color: 'navy', }}>
+            <SkillCard card ={ <AiFillCode  size={50} /> } title='TERMINAL' />
+            <SkillCard card ={ <AiOutlineHtml5 size={50} /> } title='HTML' />
+            <SkillCard card ={ <FaCss3Alt size={50} /> } title='CSS' />
+            <SkillCard card ={ <SiJavascript size={50} /> } title='JAVASCRIPT' />
+            <SkillCard card ={ <FaReact size={50} /> } title='REACT' />
+            <SkillCard card ={ <TbBrandNextjs size={50} /> } title='NEXT' />
+            <SkillCard card ={ <FaVuejs size={50} /> } title='VUE' />
+            <SkillCard card ={ <FaSass size={50} /> } title='SASS' />
+            <SkillCard card ={ <SiTailwindcss size={50} /> } title='TAILWIND' />
+            <SkillCard card ={ <SiStyledcomponents size={50} /> } title='EMOTION' />
+            <SkillCard card ={ <SiTrello size={50} /> } title='TRELLO' />
+            <SkillCard card ={ <SiClickup size={50} /> } title='CLICKUP' />
           </IconContext.Provider>
         </Container>
     </Box>
