@@ -39,7 +39,7 @@ import Typography from '@mui/material/Typography';
     // @499 scattered display
     export default function SkillCard({card, title}) {
       return (
-        <Box sx={{ minWidth: {md:150}, margin: 0.5, backgroundColor:'red'}}>
+        <Box sx={{ minWidth: {md:150}, margin: 0.5}}>
           <Card variant="outlined">
           {/* <Card variant="outlined" sx={{ backgroundColor:'purple'}}> */}
             <CardContent sx={{ display: 'flex', margin: 'auto', justifyContent: 'center', height: 80 }}>

@@ -60,14 +60,14 @@ const projects=[
     lang:'react',
   },
 ]
-const INVESTMENTS = [
+const MYPROJECTS = [
   {title:"All", id:"ALL_PROJECT"},
-  {title:"VUE", id:"VUE_PROJECT"},
-  {title:"JAVASCRIPT", id:"JS_PROJECT"},
-  {title:"TYPESCRIPT", id:"TYPE_PROJECT"},
-  {title:"REACT", id:"REACT_PROJECT"},
-  {title:"NEXT", id:"NEXT_PROJECT"},
-  {title:"WORDPRESS", id:"WORDPRESS_PROJECT"},
+  {title:"Vue js", id:"VUE_PROJECT"},
+  {title:"React js", id:"REACT_PROJECT"},
+  {title:"Next js", id:"NEXT_PROJECT"},
+  {title:"Vanilla js", id:"JS_PROJECT"},
+  {title:"Typescript", id:"TYPE_PROJECT"},
+  {title:"Wordpress", id:"WORDPRESS_PROJECT"},
   
 ]
 const Projects = () => {
@@ -84,34 +84,34 @@ const Projects = () => {
     
   
   
-  //  all investment
+  //  all projects
     setFilterProject(projects);
-  // wordpress investments
+  // wordpress projects
     const wordpress = projects.filter(obj => {
       return obj.lang === 'wordpress';
     }); console.log(wordpress);
 
-  // wordpress investments
+  // wordpress projects
     const reactP = projects.filter(obj => {
       return obj.lang === 'react';
     });console.log(reactP);
     
-  // next investments
+  // next projects
     const nextP = projects.filter(obj => {
       return obj.lang === 'next';
     });console.log(nextP);
 
-  // next investments
+  // next projects
     const vueP = projects.filter(obj => {
       return obj.lang === 'vue';
     });console.log(vueP);
 
-  // javascript investments
+  // javascript projects
     const javascriptP = projects.filter(obj => {
       return obj.lang === 'javascript';
     });console.log(javascriptP);
 
-  // typescript investments
+  // typescript projects
     const typescriptP = projects.filter(obj => {
       return obj.lang === 'typescript';
     });console.log(typescriptP);
@@ -130,7 +130,6 @@ const Projects = () => {
       backGroundColor: 'background.paper',
       display:'flex',
       flexDirection:'column',
-      // alignItems: 'center',
       gap:'4rem',
       minHeight:'100vh',
       marginY:'3rem',
@@ -151,16 +150,8 @@ const Projects = () => {
               handleChange={(item) => {
               setActiveTable(item);
               }}
-              // sx={{display:'flex',  backGroundColor:'blue'}}
-              items={INVESTMENTS}
+              items={MYPROJECTS}
           ></ManagerSwitcher>
-          {/* <Button onClick={filterWordPress} > All</Button>
-          <Button onClick={filterReact} > Vue</Button> */}
-          {/* <Button onClick={} > JavaScript</Button>
-          <Button onClick={} > TypeScript</Button>
-          <Button onClick={} > React</Button>
-          <Button onClick={} > Next</Button>
-          <Button onClick={} > Wordpress</Button> */}
        </Box>
            
 

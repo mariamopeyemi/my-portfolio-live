@@ -44,7 +44,9 @@ const About = () => {
           - Hello again-
           </Typography>
 
-          <Typography>
+          <Typography
+          sx={{marginX:'auto', width:{md:'85%', sm:'100%'}}}
+          >
               I am Afolabi Opeyemi Mariam. A product manager and software developer passionate about 
               software products and focused on building innovative solution-centric applications.
               I am focused on frontend technology and currently building products using reactJs and 
@@ -52,7 +54,7 @@ const About = () => {
               compatibility, accessibility, and responsiveness.
           </Typography>
         </Box>
-        <Container sx={{display: 'flex', flexWrap: 'wrap', backgroundColor:'blue', justifyContent:'space-between'}}>
+        <Container sx={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-between'}}>
         {/* <Container sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row'}}}> */}
           {/* <SkillCard card ={ <FaBeer /> } title='BEER' /> */}
           {/* <SkillCard card ={ <HiOutlineCode /> } title='CODE' /> */}
