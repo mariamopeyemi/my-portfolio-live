@@ -17,6 +17,7 @@ import { AiOutlineHtml5 } from 'react-icons/ai';
 import { SiStyledcomponents } from 'react-icons/si';
 import SkillCard from '../../components/card/SkillCard';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { StayPrimaryLandscape } from '@mui/icons-material';
 
 
 const About = () => {
@@ -58,7 +59,7 @@ const About = () => {
         {/* <Container sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row'}}}> */}
           {/* <SkillCard card ={ <FaBeer /> } title='BEER' /> */}
           {/* <SkillCard card ={ <HiOutlineCode /> } title='CODE' /> */}
-          <IconContext.Provider value={{color: 'navy', }}>
+          <IconContext.Provider value={{color: 'primary.main', }}>
             <SkillCard card ={ <AiFillCode  size={50} /> } title='TERMINAL' />
             <SkillCard card ={ <AiOutlineHtml5 size={50} /> } title='HTML' />
             <SkillCard card ={ <FaCss3Alt size={50} /> } title='CSS' />

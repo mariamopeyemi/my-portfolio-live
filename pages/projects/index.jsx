@@ -141,7 +141,8 @@ const Projects = () => {
       </Head>
           <Typography
           sx={{marginX:'auto'}}>
-            MY PROJECTSrgb(248,208,148)brown rgb(45,42,36)coffee
+            MY PROJECTS
+            {/* MY PROJECTSrgb(248,208,148)brown rgb(45,42,36)coffee */}
           </Typography>
       <div>
         {/* MY PROJECTS Includes */}

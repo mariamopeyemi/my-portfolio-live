@@ -39,9 +39,10 @@ const ManagerSwitcher = ({ className, items = defaultItems, handleChange = () =>
             onClick={() => {
               handleSwitch(id);
             }}
+            // color='secondary'
             key={id+i}
-            sx={{color: activeManager === id ?  'white' : 'green', cursor:'pointer', padding:'0.5rem', textAlign:'center', border:'1px solid grey', minWidth:'100px', borderRadius:'8px',
-                backgroundColor: activeManager === id ?  'green' : '',
+            sx={{color: activeManager === id ?  'background.paper' : 'secondary', cursor:'pointer', padding:'0.5rem', textAlign:'center', border:'1px solid rgb(45,42,36)', minWidth:'100px', borderRadius:'8px',
+                backgroundColor: activeManager === id ?  'secondary.main' : '',
             // '&.Mui-checked': {
             //     color: pink[600],
             //   },

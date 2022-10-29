@@ -26,7 +26,8 @@ const Intro = () => {
 				sx={{
 					display: "flex",
 					flexDirection: { xs: "column", sm: "row" },
-					// justifyContent:'center', alignContent: 'center',
+					justifyContent:'center',
+					alignContent: 'center',
 				}}
 			>
 				<Box
@@ -37,6 +38,7 @@ const Intro = () => {
 						padding: {xs:"2rem"},
 						width: {xs:"250px"},
 						height: {xs:"250px"},
+						// backGroundColor:'secondary'
 					}}
 				>
 					<Image
