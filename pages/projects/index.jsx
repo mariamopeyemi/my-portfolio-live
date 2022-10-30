@@ -50,12 +50,14 @@ const projects=[
   {
     image:'/images/yebora.jpeg',
     projectTitle:'Yebora',  
+    projectSum:'Yebora; the collector. It is a crowdfunding platform to raise money for events', 
     btnClick:'https://opeyemi-portfolio.vercel.app/', 
     lang:'react',
   },
   {
     image:'/images/yeborra.jpeg',
     projectTitle:'Shout',  
+    projectSum:'an event management platform for celebration', 
     btnClick:'https://opeyemi-portfolio.vercel.app/', 
     lang:'react',
   },
@@ -101,7 +103,7 @@ const Projects = () => {
       return obj.lang === 'next';
     });console.log(nextP);
 
-  // next projects
+  // vue projects
     const vueP = projects.filter(obj => {
       return obj.lang === 'vue';
     });console.log(vueP);
@@ -154,19 +156,8 @@ const Projects = () => {
               items={MYPROJECTS}
           ></ManagerSwitcher>
        </Box>
-           
-
-            {/* <Typography> Vue: Yebox website</Typography>
-            <Typography> Typescript: HealthXP website</Typography>
-            <Typography> React: Yebora Website</Typography>
-            <Typography> React: Yebora web App</Typography>
-            <Typography> React: Shout web App</Typography>
-            <Typography> Next: Planvest Web app</Typography>
-            <Typography> Next: Portfolio Website</Typography>
-            <Typography> Wordpress: Jurislex website</Typography> */}
-
         <Box sx={{display: 'flex', gap: 4, width: '100%',  flexWrap: 'wrap', justifyContent:'space-between'}}>
-        {activeTable === "ALL_PROJECT"  && <>
+          {activeTable === "ALL_PROJECT"  && <>
         {filterProject?.map((item, index) => {
             return (
             <ProjectCard 
@@ -251,41 +242,6 @@ const Projects = () => {
               />
           );})}
            </>}
-{/* <div>
-          <ProjectCard 
-            image='/images/planvest.jpeg'
-            projectTitle='Planvest'  
-            projectSum='A fintech app that enables you invest, save, and apply for loans' 
-            btnClick='https://www.staging-co.planvest.africa/' />
-          <ProjectCard 
-            image='/images/healthxp.jpeg'
-            projectTitle='HealthXP'  
-            projectSum='A healthTech startup that links patients with diff doctors' 
-            btnClick='https://healthxp-web.vercel.app/' />
-          <ProjectCard 
-            image='/images/juris.jpeg'
-            projectTitle='Jurislex'  
-            projectSum='a lawfirm ' 
-            btnClick='https://jurislexlawfirm.com/' />
-          <ProjectCard 
-            image='/images/calc.jpeg'
-            projectTitle='CalcIT'  
-            projectSum='a simple calculator' 
-            btnClick='https://mariamopeyemi.github.io/simple-calculator/' />
-          <ProjectCard 
-            image='/images/flip.jpeg'
-            projectTitle='MemoFlip'  
-            projectSum='a flip memory retention game' 
-            btnClick='https://card-flip-memory-game.netlify.app/' />          
-          <ProjectCard 
-            image='/images/yebora.jpeg'
-            projectTitle='Yebora'  
-            btnClick='https://opeyemi-portfolio.vercel.app/' />
-          <ProjectCard 
-            image='/images/yeborra.jpeg'
-            projectTitle='Shout'  
-            btnClick='https://opeyemi-portfolio.vercel.app/' />
-</div> */}
         </Box>
       </div>
     </Box>
@@ -293,53 +249,3 @@ const Projects = () => {
 }
 
 export default Projects;
-
-
-// projects=[
-//           {
-//             image:'/images/yebox.jpeg', 
-//             projectTitle:'Yebox', 
-//             projectSum:'A software company that builds sme ',
-//             btnClick:'https://www.yebox.io/', 
-//           },
-//           {
-//             image:'/images/planvest.jpeg',
-//             projectTitle:'Planvest',  
-//             projectSum:'A fintech app that enables you invest, save, and apply for loans', 
-//             btnClick:'https://www.staging-co.planvest.africa/', 
-//           },
-//           {
-//             image:'/images/healthxp.jpeg',
-//             projectTitle:'HealthXP',  
-//             projectSum:'A healthTech startup that links patients with diff doctors', 
-//             btnClick:'https://healthxp-web.vercel.app/', 
-//           },
-//           {
-//             image:'/images/juris.jpeg',
-//             projectTitle:'Jurislex',  
-//             projectSum:'a lawfirm ', 
-//             btnClick:'https://jurislexlawfirm.com/', 
-//           },
-//           {
-//             image:'/images/calc.jpeg',
-//             projectTitle:'CalcIT',  
-//             projectSum:'a simple calculator', 
-//             btnClick:'https://mariamopeyemi.github.io/simple-calculator/', 
-//           },
-//           {
-//             image:'/images/flip.jpeg',
-//             projectTitle:'MemoFlip',  
-//             projectSum:'a flip memory retention game', 
-//             btnClick:'https://card-flip-memory-game.netlify.app/', 
-//           },          
-//           {
-//             image:'/images/yebora.jpeg',
-//             projectTitle:'Yebora',  
-//             btnClick:'https://opeyemi-portfolio.vercel.app/', 
-//           },
-//           {
-//             image:'/images/yeborra.jpeg',
-//             projectTitle:'Shout',  
-//             btnClick:'https://opeyemi-portfolio.vercel.app/', 
-//           },
-// ]
