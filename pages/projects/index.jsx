@@ -8,7 +8,7 @@ const projects=[
   {
     image:'/images/yebox.jpeg', 
     projectTitle:'Yebox', 
-    projectSum:'A software company that builds sme ',
+    projectSum:'A software company that provides software solutions and products ',
     btnClick:'https://www.yebox.io/', 
     lang:'vue',
   },
@@ -22,14 +22,14 @@ const projects=[
   {
     image:'/images/healthxp.jpeg',
     projectTitle:'HealthXP',  
-    projectSum:'A healthTech startup that links patients with diff doctors', 
+    projectSum:'A healthTech startup that links patients with different doctors with data transfer  and security as priority', 
     btnClick:'https://healthxp-web.vercel.app/', 
     lang:'typescript',
   },
   {
     image:'/images/juris.jpeg',
     projectTitle:'Jurislex',  
-    projectSum:'a lawfirm ', 
+    projectSum:'a lawfirm that provides legal solutions', 
     btnClick:'https://jurislexlawfirm.com/', 
     lang:'wordpress',
   },
