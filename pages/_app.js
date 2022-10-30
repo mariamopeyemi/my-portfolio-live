@@ -1,51 +1,13 @@
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 import {useState, useEffect} from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Navbar from '../components/NavBar';
+// import Navbar from '../components/NavBar';
 import Nav from '../components/Nav';
 import { ColorModeContext } from '../config/color-context';
-import { red, blue , brown} from '@mui/material/colors';
+import { red, grey,  brown, purple} from '@mui/material/colors';
 
-
-// Create a theme instance.
-// const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: red[500],
-//     },
-//   },
-// });
-
-// const getDesignTokens = (mode) => ({
-//   palette: {
-//     mode,
-//     primary: {
-//       ...amber,
-//       ...(mode === 'dark' && {
-//         main: amber[300],
-//       }),
-//     },
-//     ...(mode === 'dark' && {
-//       background: {
-//         default: deepOrange[900],
-//         paper: deepOrange[900],
-//       },
-//     }),
-//     text: {
-//       ...(mode === 'light'
-//         ? {
-//             primary: grey[900],
-//             secondary: grey[800],
-//           }
-//         : {
-//             primary: '#fff',
-//             secondary: grey[500],
-//           }),
-//     },
-//   },
-// });
 // rgb(248,208,148)brown rgb(45,42,36)coffee
-// 'primary.main'
+
 const lightTheme = createTheme({
   palette:{
     mode: 'light',
@@ -73,13 +35,19 @@ const darkTheme = createTheme({
   palette:{
     mode: 'dark',
     primary:{
-      main: red[500],
+      main: '#eeeeee',
       // light: '#B1DED3',
       // dark: '#00765A',
     },
+    secondary:{
+      main: purple[400],
+      // main: 'rgb(220,220,220)',
+      light: '#B1DED3',
+      dark: '#00765A',
+    },
     background: {
-      // default: 'rgb(248,208,148)',
-      // paper: 'rgb(248,208,148)',
+      default: 'rgb(28,28,30)',
+      paper: 'rgb(28,28,30)',
     },
     text: {
       // primary: '#fff',
@@ -100,7 +68,6 @@ function MyApp({ Component, pageProps }) {
 
   const toggleTheme=()=>{
     const desiredTheme = selectedTheme === 'light' ? 'dark' : 'light';
-
     setSelectedTheme(desiredTheme);
     // setActiveTheme(desiredTheme === 'light' ? lightTheme : darkTheme);
   }

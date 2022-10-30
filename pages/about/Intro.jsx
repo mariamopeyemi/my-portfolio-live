@@ -9,12 +9,12 @@ const Intro = () => {
 		<Box
 			sx={{
 				backGroundColor: "background.paper",
-				// paddingTop:'4rem',
 				display: "flex",
-				// justifyContent:'center',
-				// alignContent: 'center',
 				alignItems: "center",
 				minHeight: "100vh",
+				// justifyContent:'center',
+				// alignContent: 'center',
+				// paddingTop:'4rem',				
 			}}
 		>
 			<Head>
@@ -28,6 +28,7 @@ const Intro = () => {
 					flexDirection: { xs: "column", sm: "row" },
 					justifyContent:'center',
 					alignContent: 'center',
+					// backgroundColor:'red',
 				}}
 			>
 				<Box
@@ -38,6 +39,7 @@ const Intro = () => {
 						padding: {xs:"2rem"},
 						width: {xs:"250px"},
 						height: {xs:"250px"},
+						marginBottom: {xs:"2rem"},
 						// backGroundColor:'secondary'
 					}}
 				>
@@ -55,6 +57,7 @@ const Intro = () => {
 						display: "flex",
 						flexDirection: "column",
 						alignItems: "center",
+						margin:"auto",
 					}}
 				>
 					<Typography>Hello World 👋, I am Afolabi Opeyemi,</Typography>
@@ -79,17 +82,51 @@ const Intro = () => {
 								color: "white",
 							}}
 						>
-							<Button variant="contained" color="secondary">
+							<Button variant="contained" color="secondary"
+							sx={{ 
+								"&:hover": {
+								  color: 'gray',
+								  backgroundColor: 'black',
+								},
+							  }}>
 								Resume
 							</Button>
 						</Link>
-						<Button
+						<Link
+							target="_blank"
+							rel="noreferrer noopener"
+							href="https://medium.com/@opeyemi.afolabi45"
+							sx={{
+								textDecoration: "none",
+								color: "white",
+							}}
+						>
+							<Button
+								variant="contained"
+								color="secondary"
+								sx={{ 
+									"&:hover": {
+									color: 'gray',
+									backgroundColor: 'black',
+									},
+								}}
+							>
+								Blog
+							</Button>
+						</Link>
+						{/* <Button
 							variant="contained"
 							color="secondary"
 							href="mailto:opeyemi.dev@gmail.com"
+							sx={{ 
+								"&:hover": {
+								  color: 'gray',
+								  backgroundColor: 'black',
+								},
+							  }}
 						>
 							Contact
-						</Button>
+						</Button> */}
 					</Box>
 				</Box>
 			</Container>
