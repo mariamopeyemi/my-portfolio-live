@@ -79,9 +79,10 @@ const Contact = () => {
 										label="Email"
 									/>
 									<Field
-										as={TextareaAutosize}
+										as={TextField}
 										variant="filled"
-										minRows={5}
+										rows={5}
+										multiline
 										error={touched.message && errors.message}
 										helperText={touched.message && errors.message}
 										name="message"
