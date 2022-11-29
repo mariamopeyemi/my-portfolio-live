@@ -1,0 +1,7 @@
+so I have completed the portfolio.
+To make it differ;
+work on the project card
+add animation
+add design like yebox own
+Try to use hook like use state, useref, etc
+Try to use hook like use state, useref, etc
