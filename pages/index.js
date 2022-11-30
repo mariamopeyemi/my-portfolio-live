@@ -8,6 +8,7 @@ import About from './about';
 import Contact from './contact';
 import Socials from '../components/Socials';
 import Intro from './about/Intro';
+import {CgAsterisk} from 'react-icons/cg'
 
 
 export default function Home() {
@@ -23,6 +24,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Box>
+          <CgAsterisk />
+          <CgAsterisk />
+          <CgAsterisk />
+          <CgAsterisk />
+          <CgAsterisk />
+          <CgAsterisk />
+        </Box>
         <Intro />
         < About />
         <Projects />
