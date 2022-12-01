@@ -8,7 +8,11 @@ import About from './about';
 import Contact from './contact';
 import Socials from '../components/Socials';
 import Intro from './about/Intro';
-import {CgAsterisk} from 'react-icons/cg'
+import { CgAsterisk } from 'react-icons/cg';
+
+import { SiClickup } from 'react-icons/si';
+import { AiOutlineHtml5 } from 'react-icons/ai';
+import { SiStyledcomponents } from 'react-icons/si';
 
 
 export default function Home() {
@@ -33,8 +37,14 @@ export default function Home() {
           <CgAsterisk />
         </Box>
         <Intro />
+        <CgAsterisk color="purple" size='40px' className={styles.containerIcon } />
+        <CgAsterisk color="red" />
         < About />
+        <CgAsterisk color="primary" />
+        <CgAsterisk color="secondary" />
+        {/* <Img3></Img3> */}
         <Projects />
+        <CgAsterisk />
         <Contact />
         <Socials />
       </main>
@@ -45,3 +55,5 @@ export default function Home() {
     </Box>
   )
 }
+
+
