@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect} from "react";
 import Head from 'next/head';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import {IconContext} from "react-icons";
 import { FaSass } from 'react-icons/fa';
 import { FaBeer } from 'react-icons/fa';
@@ -21,6 +23,11 @@ import { StayPrimaryLandscape } from '@mui/icons-material';
 
 
 const About = () => {
+  useEffect(() => {
+		Aos.init({
+			duration: 1000
+		  });
+	}, [])
   return (
     <Box sx={{
       backGroundColor: 'background.paper',
@@ -38,15 +45,16 @@ const About = () => {
     {/* <Container sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row'}}}> */}
   
         <Box sx={{ display:'flex', flexDirection: 'column', alignItems:'center'}}>
-          <Typography>
+          <Typography 	data-aos='fade-left'>
             ABOUT ME
           </Typography>
-          <Typography>
+          <Typography 	data-aos='fade-right'>
           - Hello again-
           </Typography>
 
           <Typography
-          sx={{marginX:'auto', width:{md:'85%', sm:'100%'}}}
+          	data-aos='flip-left'
+            sx={{marginX:'auto', width:{md:'85%', sm:'100%'}}}
           >
               I am Afolabi Opeyemi Mariam. A product manager and software developer passionate about 
               software products and focused on building innovative solution-centric applications.

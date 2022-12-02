@@ -1,6 +1,8 @@
 import React, { useState , useEffect} from 'react'
 import { Box, Button, Typography } from '@mui/material';
 import Head from 'next/head';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import ManagerSwitcher from '../../components/ManagerSwitcher';
 import ProjectCard from '../../components/card/ProjectCard';
 
@@ -82,6 +84,7 @@ const Projects = () => {
   const [filterTypescript, setFilterTypescript] =useState([]);
   const [activeTable, setActiveTable] = useState("ALL_PROJECT");
 
+
   useEffect(() => {
     
   
@@ -160,7 +163,7 @@ const Projects = () => {
           {activeTable === "ALL_PROJECT"  && <>
         {filterProject?.map((item, index) => {
             return (
-            <ProjectCard 
+            <ProjectCard 	data-aos='flip-left'
               key={index}
               image={item.image}
               projectTitle={item.projectTitle}

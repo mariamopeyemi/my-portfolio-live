@@ -50,7 +50,7 @@ const darkTheme = createTheme({
       paper: 'rgb(28,28,30)',
     },
     text: {
-      primary: ''
+      // primary: ''
       // primary: '#fff',
       // secondary: grey[500],
     },

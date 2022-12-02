@@ -1,9 +1,12 @@
-import * as React from 'react';
+// import * as React from 'react';
+import React, {useEffect} from "react";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Typography from '@mui/material/Typography';
     
     const bull = (
@@ -38,8 +41,14 @@ import Typography from '@mui/material/Typography';
     // );
     // @499 scattered display
     export default function SkillCard({card, title}) {
+
+      useEffect(() => {
+        Aos.init({
+          duration: 2000
+          });
+      }, [])
       return (
-        <Box sx={{ minWidth: {md:150}, margin: 0.5}}>
+        <Box 	data-aos='flip-right' sx={{ minWidth: {md:150}, margin: 0.5}}>
           <Card variant="outlined">
           {/* <Card variant="outlined" sx={{ backgroundColor:'purple'}}> */}
             <CardContent sx={{ display: 'flex', margin: 'auto', justifyContent: 'center', height: 80 }}>

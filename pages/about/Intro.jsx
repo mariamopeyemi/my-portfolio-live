@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Head from "next/head";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Link from "@mui/material/Link";
 import Image from "next/image";
+
+
 const Intro = () => {
+
+	useEffect(() => {
+		Aos.init({
+			duration: 2000
+		  });
+	}, [])
+	
 	return (
 		<Box
 			sx={{
@@ -32,6 +42,7 @@ const Intro = () => {
 				}}
 			>
 				<Box
+				data-aos='fade-right'
 					sx={{
 						flex: "1",
 						border: {xs:"2px black solid", sm:'none'},
@@ -52,6 +63,7 @@ const Intro = () => {
 					/>
 				</Box>
 				<Box
+					data-aos='fade-left'
 					sx={{
 						flex: "1",
 						display: "flex",
@@ -83,6 +95,7 @@ const Intro = () => {
 							}}
 						>
 							<Button variant="contained" color="secondary"
+								data-aos='zoom-in-left'
 							sx={{ 
 								"&:hover": {
 								  color: 'gray',
@@ -102,6 +115,8 @@ const Intro = () => {
 							}}
 						>
 							<Button
+								data-aos='zoom-in-right'
+								// data-aos-duration='5000'
 								variant="contained"
 								color="secondary"
 								sx={{ 
