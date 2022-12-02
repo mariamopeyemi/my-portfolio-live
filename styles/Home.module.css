@@ -21,7 +21,45 @@
     padding: 2rem;
   }
 }
+.containerIcon {
+  position: absolute;
+  top: 10%;
+  /* right: 10%; */
+  /* background-color: red; */
+  width: 60px;
+  height: 60px;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+ 
+}
+@keyframes example3 {
+  0%   {width: 60px; left:0px; top:10%;}
+  25%  {width: 40px; left:0px; top:10%;}
+  50%  {width: 60px; left:0px; top:10%;}
+  75%  {width: 20px; left:0px; top:10%;}
+  100% {width: 60px; left:0px; top:10%;}
+}
 
+
+/* const Img3 =styled.div`
+  position: absolute;
+  top: 10%;
+  width: 60px;
+  height: 60px;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  @keyframes example3 {
+  0%   {width: 60px; left:0px; top:10%;}
+  25%  {width: 40px; left:0px; top:10%;}
+  50%  {width: 60px; left:0px; top:10%;}
+  75%  {width: 20px; left:0px; top:10%;}
+  100% {width: 60px; left:0px; top:10%;}
+}
+` */
 .footer {
   display: flex;
   flex: 1;

@@ -1,0 +1,17 @@
+so I have completed the portfolio.
+To make it differ;
+work on the project card
+add animation
+i added transition with aos package and imported as 
+import Aos from 'aos';
+import 'aos/dist/aos.css'; ..... then did initialization with useeffect
+ useEffect(() => {
+		Aos.init({
+			duration: 1000
+		  });
+	}, [])
+
+    I styled the element with data-aos='zoom-in-right' and the value can be anything check https://www.npmjs.com/package/aos for refence
+add design like yebox own
+Try to use hook like use state, useref, etc
+Try to use hook like use state, useref, etc

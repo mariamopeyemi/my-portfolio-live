@@ -1,4 +1,6 @@
-import * as React from 'react';
+import React, { useState , useEffect} from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Card from '@mui/material/Card';
 import Link from '@mui/material/Link';
 import CardContent from '@mui/material/CardContent';
@@ -11,8 +13,13 @@ export default function ProjectCard({projectTitle, image, btnClick,
     projectSum= "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 }
 ) {
+  useEffect(() => {
+		Aos.init({
+			duration: 1000
+		  });
+	}, [])
   return (
-    <Card sx={{ width: 400 }}>
+    <Card sx={{ width: 400 }} data-aos='zoom-in-right'>
       <CardActionArea>
         <CardMedia
           component="img"
