@@ -24,15 +24,21 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <Box>
-          <CgAsterisk />
-          <CgAsterisk />
-        </Box> */}
+        <Box>
+          <CgAsterisk color='green'/>
+          <CgAsterisk color='green' />
+        </Box>
         
         <Intro />
         <About />
+
+        <CgAsterisk color='secondary.main' size='60px' className={styles.containerIcon} />
         <Projects />
+
+        <CgAsterisk color='secondary.main' size='60px'  />
         <Contact />
+
+        <CgAsterisk color='secondary.main' size='60px'  />
         <Socials />
       </main>
       
