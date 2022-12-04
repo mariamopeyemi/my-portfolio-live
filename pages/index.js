@@ -32,10 +32,10 @@ export default function Home() {
         <Intro />
         <About />
 
-        <CgAsterisk color='secondary.main' size='60px' className={styles.containerIcon} />
+        <CgAsterisk color='secondary.main' size='60px' className={styles.styleZoomOut} />
         <Projects />
 
-        <CgAsterisk color='secondary.main' size='60px'  />
+        <CgAsterisk color='secondary.main' size='60px' className={styles.styleRotate}  />
         <Contact />
 
         <CgAsterisk color='secondary.main' size='60px'  />
