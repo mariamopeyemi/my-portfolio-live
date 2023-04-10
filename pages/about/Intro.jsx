@@ -88,7 +88,7 @@ const Intro = () => {
 						<Link
 							target="_blank"
 							rel="noreferrer noopener"
-							href="/doc/opeyemi.pdf"
+							href="/doc/DEV_AFOLABI_OPEYEMI_CV.pdf"
 							sx={{
 								textDecoration: "none",
 								color: "white",

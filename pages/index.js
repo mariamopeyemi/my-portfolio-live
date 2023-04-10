@@ -25,20 +25,20 @@ export default function Home() {
 
       <main className={styles.main}>
         <Box>
-          <CgAsterisk color='green'/>
-          <CgAsterisk color='green' />
+          {/* <CgAsterisk color='green'/>
+          <CgAsterisk color='green' /> */}
         </Box>
         
         <Intro />
         <About />
 
-        <CgAsterisk color='secondary.main' size='60px' className={styles.styleZoomOut} />
+        {/* <CgAsterisk color='secondary.main' size='60px' className={styles.styleZoomOut} /> */}
         <Projects />
 
-        <CgAsterisk color='secondary.main' size='60px' className={styles.styleRotate}  />
+        {/* <CgAsterisk color='secondary.main' size='60px' className={styles.styleRotate}  /> */}
         <Contact />
 
-        <CgAsterisk color='secondary.main' size='60px'  />
+        {/* <CgAsterisk color='secondary.main' size='60px'  /> */}
         <Socials />
       </main>
       
