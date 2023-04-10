@@ -8,7 +8,7 @@ import ProjectCard from '../../components/card/ProjectCard';
 
 const projects=[
   {
-    image:'/images/yebox.jpeg', 
+    image:'/images/yebox1.jpeg', 
     projectTitle:'Yebox', 
     projectSum:'A software company that provides software solutions and products ',
     btnClick:'https://www.yebox.io/', 
@@ -53,15 +53,22 @@ const projects=[
     image:'/images/yebora.jpeg',
     projectTitle:'Yebora',  
     projectSum:'Yebora; the collector. It is a crowdfunding platform to raise money for events', 
-    btnClick:'https://opeyemi-portfolio.vercel.app/', 
+    btnClick:'https://www.yebora.com/', 
     lang:'react',
   },
   {
     image:'/images/yeborra.jpeg',
     projectTitle:'Shout',  
     projectSum:'an event management platform for celebration', 
-    btnClick:'https://opeyemi-portfolio.vercel.app/', 
+    btnClick:'http://link-app-woad.vercel.app/', 
     lang:'react',
+  },
+  {
+    image:'/images/mimi-store.png',
+    projectTitle:'Mariam Store',  
+    projectSum:'an ecommerce website for shopping variety of products', 
+    btnClick:'https://ecommerce-nine-lac.vercel.app/', 
+    lang:'next',
   },
 ]
 const MYPROJECTS = [

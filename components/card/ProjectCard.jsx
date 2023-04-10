@@ -23,9 +23,10 @@ export default function ProjectCard({projectTitle, image, btnClick,
       <CardActionArea>
         <CardMedia
           component="img"
-          height="200"
+          height="250"
           image={image}
           alt="diff projects"
+          // style={{objectFit: 'cover', objectPosition: 'center'}}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

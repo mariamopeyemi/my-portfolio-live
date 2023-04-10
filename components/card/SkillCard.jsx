@@ -48,7 +48,7 @@ import Typography from '@mui/material/Typography';
           });
       }, [])
       return (
-        <Box 	data-aos='flip-right' sx={{ minWidth: {md:150}, margin: 0.5}}>
+        <Box 	data-aos='flip-right' sx={{ minWidth: {md: 150 }, margin: 0.5}}>
           <Card variant="outlined">
           {/* <Card variant="outlined" sx={{ backgroundColor:'purple'}}> */}
             <CardContent sx={{ display: 'flex', margin: 'auto', justifyContent: 'center', height: 80 }}>
