@@ -59,7 +59,7 @@ import { amber, deepOrange, grey } from '@mui/material/colors';
         },
       }),
       [],
-    );
+    );}
   
     // Update the theme only if the mode changes
 //     const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]);

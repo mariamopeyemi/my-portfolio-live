@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Nav from '../components/Nav';
 import { ColorModeContext } from '../config/color-context';
 import { red, grey,  brown, purple} from '@mui/material/colors';
+import NavBar from '../components/NewNav';
 
 // rgb(248,208,148)brown rgb(45,42,36)coffee
 
@@ -84,7 +85,7 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider theme={activeTheme} >
         <CssBaseline />
         {/* Css Baseline -This enables the toggle on all component and for the app's background. */}
-        {/* <Navbar toggleTheme={toggleTheme} /> */}
+        {/* <NavBar toggleTheme={toggleTheme} /> */}
         <Nav toggleTheme={toggleTheme} />
         <Component {...pageProps} toggleTheme={toggleTheme} />
       </ThemeProvider>
